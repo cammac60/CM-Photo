@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from './Header/page.js';
 
 const DINMittelschrift = localFont({
   src: "./fonts/DINMittelschriftStd.otf",
@@ -14,7 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${DINMittelschrift.variable}`}>
+      <body>
+        <Header />
         {children}
       </body>
     </html>
