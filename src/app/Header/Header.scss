@@ -1,9 +1,10 @@
 @import '../variables.module.scss';
 
 #header-wrapper {
-    width: 100vw;
-    height: 10vh;
     background: {
         color: $tertiary-color;
     };
+    font-family: $main-font;
+    height: 10vh;
+    width: 100vw;
 }
