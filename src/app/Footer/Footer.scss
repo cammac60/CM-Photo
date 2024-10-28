@@ -1,6 +1,16 @@
 @import '../variables.module.scss';
 
 #footer-wrapper {
-    margin-top: auto;
-    width: 100wv;
+    color: $secondary-color-dark;
+    font: {
+        family: $main-font;
+        size: 0.8rem;
+        weight: normal;
+    }
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    text-align: center;
+    width: 25vw;
 }
