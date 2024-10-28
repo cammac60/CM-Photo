@@ -7,9 +7,9 @@ const Footer = () => {
 
     return (
         <div id="footer-wrapper">
-            <p>Copyright Notice</p>
-            <p>© {currentYear} Cameron MacRae Photography & Design. All rights reserved.</p>
-            <p>All images and content on this website are the property of John Doe and are protected by copyright laws. Unauthorized use, reproduction, or distribution of any images or content without prior written permission is strictly prohibited. For licensing inquiries or to obtain permission for use, please contact {email}.</p>
+            <p className="footer-text" id="_notice">Copyright Notice</p>
+            <p className="footer-text" id="_rights">© {currentYear} Cameron MacRae Photography & Design. All rights reserved.</p>
+            <p className="footer-text" id="_disclaimer">All images and content on this website are the property of Cameron MacRae and are protected by copyright laws. Unauthorized use, reproduction, or distribution of any images or content without prior written permission is strictly prohibited. For licensing inquiries or to obtain permission for use, please contact {email}.</p>
         </div>
     )
 };
