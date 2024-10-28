@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { usePathname } from 'next/navigation'
 
 import Header from './Header/page.js';
 import Footer from './Footer/page.js';
@@ -15,6 +16,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const pathName = usePathname();
   return (
     <html lang="en">
       <body>
