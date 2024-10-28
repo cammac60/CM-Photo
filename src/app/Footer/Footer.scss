@@ -2,14 +2,16 @@
 
 #footer-wrapper {
     color: $secondary-color-dark;
+    float: auto;
     font: {
         family: $main-font;
-        size: 0.8rem;
+        size: 0.7rem;
         weight: normal;
     }
     margin: {
         left: auto;
         right: auto;
+        top: auto;
     }
     text-align: center;
     width: 25vw;
