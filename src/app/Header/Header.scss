@@ -1,10 +1,35 @@
 @import '../variables.module.scss';
 
+#header-left {
+    &_title {
+        font: {
+            size: 3.5rem;
+            weight: normal;
+        }
+        margin: 0;
+    }
+    &_sub-title {
+        font: {
+            size: 2rem;
+            weight: normal;
+        }
+        margin: 0;
+    }
+}
+
+#header-right {
+    
+}
+
 #header-wrapper {
     background: {
-        color: $tertiary-color;
+        color: $primary-color;
     };
-    font-family: $main-font;
+    font: {
+        family: $main-font;
+        weight: normal;
+    }
     height: 10vh;
     width: 100vw;
 }
+
