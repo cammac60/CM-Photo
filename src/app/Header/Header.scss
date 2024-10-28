@@ -1,9 +1,13 @@
 @import '../variables.module.scss';
 
 #header-left {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    justify-content: space-between;
     &_title {
         font: {
-            size: 3.5rem;
+            size: 5rem;
             weight: normal;
         }
         margin: 0;
@@ -13,23 +17,48 @@
             size: 2rem;
             weight: normal;
         }
-        margin: 0;
+        margin: {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: auto;
+        }
+        margin-block: 0;
+        margin-inline: 0;
     }
 }
 
 #header-right {
-    
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    width: 30vw;
 }
 
 #header-wrapper {
     background: {
         color: $primary-color;
     };
+    display: flex;
     font: {
         family: $main-font;
         weight: normal;
     }
     height: 10vh;
+    justify-content: space-between;
     width: 100vw;
+}
+
+.menu_link {
+    color: $secondary-color;
+    font: {
+        size: 1.5rem;
+        weight: normal;
+    }
+    margin-top: auto;
+    text-decoration: none;
+    &:hover {
+        color: $tertiary-color;
+    }
 }
 
