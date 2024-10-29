@@ -9,7 +9,7 @@ const Home = async () => {
     <div>
       {
         imageUrl && (
-          <Image src={imageUrl} alt="Image from API" height={300} width={500} />
+          <Image src={imageUrl} alt="Image from API" id="banner-img" height={300} width={500} />
         )
       }
     </div>
