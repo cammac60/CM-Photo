@@ -30,8 +30,9 @@
 
 #header-right {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-left: auto;
+    text-align: left;
     width: 30vw;
 }
 
@@ -44,9 +45,9 @@
         family: $main-font;
         weight: normal;
     }
-    height: 10vh;
     justify-content: space-between;
-    width: 100vw;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .menu_link {
