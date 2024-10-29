@@ -6,10 +6,10 @@ const Home = async () => {
   console.log(imageUrl);
 
   return (
-    <div>
+    <div id="banner-img-wrapper">
       {
         imageUrl && (
-          <Image src={imageUrl} alt="Image from API" id="banner-img" height={300} width={500} />
+          <Image src={imageUrl} alt="Image from API" id="banner-img" height={1280} width={2048} />
         )
       }
     </div>
