@@ -1,10 +1,19 @@
-import { getImageURLs } from './apiCalls.js';
+import { getBannerImage } from './apiCalls.js';
+import Image from 'next/image';
 
-export default function Home() {
-  getImageURLs('dcc2dc25-136a-4942-f89a-617c431f0c00');
+const Home = async () => {
+  const imageUrl = await getBannerImage();
+  console.log(imageUrl);
+
   return (
     <div>
-
+      {
+        imageUrl && (
+          <Image src={imageUrl} alt="Image from API" height={300} width={500} />
+        )
+      }
     </div>
   );
-}
+};
+
+export default Home;
