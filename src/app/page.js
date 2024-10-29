@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 const Home = async () => {
   const imageUrl = await getBannerImage();
-  console.log(imageUrl);
 
   return (
     <div id="banner-img-wrapper">
