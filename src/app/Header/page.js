@@ -14,7 +14,7 @@ const Header = () => {
                 <h2 id="header-left_sub-title">Photography & Design</h2>
             </div>
             <div id="header-right">
-                <Link href="" id="_home" className="menu_link">Home</Link>
+                <Link href="./" id="_home" className="menu_link">Home</Link>
                 <Link href="/Gallery" id="_gallery" className="menu_link">Gallery</Link>
                 <Link href="/About" id="_about" className="menu_link">About</Link>
                 {/* TO DO: Add link to storefront */}
