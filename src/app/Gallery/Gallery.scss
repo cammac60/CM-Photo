@@ -5,7 +5,23 @@
     justify-content: space-around;
     width: 100%;
     &_banner {
-        height: auto;
+        display: flex;
+        height: 50%;
+        margin: {
+            bottom: 20rem;
+            top: auto;
+        }
         width: 100%;
     }
+}
+
+.gallery_banner-tile {
+    aspect-ratio: auto 1638 / 2048;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    width: 100%;
+    width: 25%;
 }
