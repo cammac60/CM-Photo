@@ -1,3 +1,5 @@
+import './Gallery.scss';
+
 const Gallery = async () => {
 
     return (
