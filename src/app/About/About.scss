@@ -30,3 +30,17 @@
         width: 95%;
     }
 }
+
+.menu_link-2 {
+    color: $tertiary-color;
+    font: {
+        weight: normal;
+    }
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: $tertiary-color-dark;
+    }
+}
