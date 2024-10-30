@@ -18,13 +18,11 @@
 }
 
 .gallery_banner-tile {
-    align-items: center;
     aspect-ratio: auto 1638 / 2048;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $secondary-color;
-    display: flex;
     height: auto;
     text-decoration: none;
     width: 25%;
@@ -44,5 +42,15 @@
     }
     &:active {
         color: $tertiary-color-dark;
+    }
+}
+
+.blur {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    &:hover {
+        backdrop-filter: blur(2px);
     }
 }
