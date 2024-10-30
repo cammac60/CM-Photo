@@ -17,7 +17,7 @@
     }
     &_text-wrapper {
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.850);
+        background-color: $primary-color-transparent;
         color: $secondary-color;
         display: flex;
         font: {
