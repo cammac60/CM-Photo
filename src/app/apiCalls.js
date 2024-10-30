@@ -56,3 +56,18 @@ export const getGalleryBannerImages = async () => {
     const imageData = await sanitizeBannerData(unsanitizedData);
     return imageData;
 };
+
+export const getPhotosByGalleryType = async type => {
+    const filteredImages = rawImageData.filter(data => { 
+        return data.category === type ? true : false;
+    });
+    const imageData = [ ...filteredImages[0].images ];
+    const sanitizedImageData = await Promise.all(
+        imageData.map(async image => {
+            const { id, caption, name, storeURL, variantSize, order } = image;
+            const url = await getImage(id, variantSize);
+            return { id, caption, name, storeURL, variantSize, order, url };
+        })
+    );
+    return sanitizedImageData;
+};
