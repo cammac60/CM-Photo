@@ -1,2 +1,27 @@
 @import '../variables.module.scss';
 
+#about {
+    height: auto;
+    width: 100%;
+    &_background {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 1280px;
+        width: 100%;
+    }
+    &_text {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.700);
+        color: $secondary-color;
+        display: flex;
+        font: {
+            family: $main-font;
+            size: 2rem;
+        }
+        height: 90%;
+        margin: auto;
+        width: 95%;
+    }
+}
