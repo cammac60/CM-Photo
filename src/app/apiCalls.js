@@ -1,6 +1,6 @@
 
 import 'server-only';
-import { imageData } from './imageData.js';
+import { rawImageData } from './imageData.js';
 
 const baseUrl = 'https://api.cloudflare.com/client/v4/accounts/';
 
@@ -33,17 +33,26 @@ export const getBannerImage = async () => {
     return getImage(bannerImgUrl, 'landscapeWeb');
 };
 
+export const sanitizeBannerData = async data => {
+    const sanitizedData = await Promise.all(
+        data.map(async image => {
+            const { id, variantSize, categoryName } = image;
+            const url = await getImage(id, variantSize);
+            return { url, categoryName }; 
+        })
+    );
+    return sanitizedData;
+};
+
 export const getGalleryBannerImages = async () => {
-    // Filter banner images from imageData
-    const bannerImages = data => {
+    const bannerImagesData = data => {
         return data.map(category => {
-            return {
-                category: category.category,
-                images: category.images.filter(image => image.isBanner)
-            };
+            const { id, variantSize } = category.images.filter(image => image.isBanner)[0];
+            const categoryName = category.category;
+            return { id, variantSize, categoryName };
         });
     };
-    return bannerImages(imageData);
-    // Sort images in correct order
-    // For each image run getImage with id and variant, append result to image object
+    const unsanitizedData = bannerImagesData(rawImageData);
+    const imageData = await sanitizeBannerData(unsanitizedData);
+    return imageData;
 };
