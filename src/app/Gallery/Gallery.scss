@@ -23,9 +23,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: $secondary-color;
     display: flex;
     height: auto;
-    width: 100%;
+    text-decoration: none;
     width: 25%;
     &_text {
         background-color: $primary-color-transparent;
