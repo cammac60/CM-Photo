@@ -1,3 +1,5 @@
+@import '../variables.module.scss';
+
 #gallery {
     aspect-ratio: auto 2048 / 1280;
     display: flex;
@@ -16,6 +18,7 @@
 }
 
 .gallery_banner-tile {
+    align-items: center;
     aspect-ratio: auto 1638 / 2048;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,4 +27,21 @@
     height: auto;
     width: 100%;
     width: 25%;
+    &_text {
+        background-color: $primary-color-transparent;
+        font: {
+            family: $main-font;
+            size: 4rem;
+            weight: normal;
+        }
+        text-align: center;
+        width: 100%;
+    }
+    &:hover {
+        color: $tertiary-color;
+        cursor: pointer;
+    }
+    &:active {
+        color: $tertiary-color-dark;
+    }
 }
