@@ -1,4 +1,4 @@
-export const imageData = [
+export const rawImageData = [
     {
         category: "Towers",
         images: [
