@@ -8,7 +8,7 @@ const Home = async () => {
     <div id="banner-img-wrapper">
       {
         imageUrl && (
-          <Image src={imageUrl} alt="Image from API" id="banner-img" height={1280} width={2048} />
+          <Image src={imageUrl} alt="Image from API" id="banner-img" height={1280} width={2048} quality={100} overrideSrc='/bannerImg.jpg'/>
         )
       }
     </div>
