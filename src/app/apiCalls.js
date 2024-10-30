@@ -23,7 +23,7 @@ export const getImageVariantUrls = async imageID => {
 
 export const getImage = async (url, type) => {
     const result = await getImageVariantUrls(url);
-    const formattedUrl = result.filter(variant => variant.endsWith('landscapeWeb'))[0];
+    const formattedUrl = result.filter(variant => variant.endsWith(type))[0];
     return formattedUrl;
 };
 
