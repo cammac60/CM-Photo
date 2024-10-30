@@ -1,0 +1,11 @@
+#gallery {
+    aspect-ratio: auto 2048 / 1280;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    width: 100%;
+    &_banner {
+        height: auto;
+        width: 100%;
+    }
+}
