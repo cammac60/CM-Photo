@@ -1,5 +1,6 @@
 
 import 'server-only';
+import { imageData } from './imageData.js';
 
 const baseUrl = 'https://api.cloudflare.com/client/v4/accounts/';
 
@@ -30,4 +31,19 @@ export const getImage = async (url, type) => {
 export const getBannerImage = async () => {
     const bannerImgUrl = process.env.BANNER_IMG_ID;
     return getImage(bannerImgUrl, 'landscapeWeb');
+};
+
+export const getGalleryBannerImages = async () => {
+    // Filter banner images from imageData
+    const bannerImages = data => {
+        return data.map(category => {
+            return {
+                category: category.category,
+                images: category.images.filter(image => image.isBanner)
+            };
+        });
+    };
+    return bannerImages(imageData);
+    // Sort images in correct order
+    // For each image run getImage with id and variant, append result to image object
 };
