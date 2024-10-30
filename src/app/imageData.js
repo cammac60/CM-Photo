@@ -121,7 +121,7 @@ export const rawImageData = [
             },
             {
                 name: "nh-capital2.JPG",
-                id: "d0e16876-7a49-4ad0-66bd-a12294b3da00",
+                id: "b686c147-cc28-438c-41d3-f71a5469ed00",
                 caption: "New Hampshire State House, Concord, New Hampshire, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
