@@ -1,0 +1,11 @@
+@import '../../variables.module.scss';
+
+.gallery-images-wrapper {
+    display: grid;
+    height: auto;
+    width: 100%;
+}
+
+#towers_wrapper {
+    grid-template-columns: repeat(2);
+}
