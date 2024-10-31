@@ -1,1 +1,28 @@
 @import '../variables.module.scss';
+
+.gallery-img {
+    &:hover {
+        background-color: $tertiary-color-transparent;
+    }
+}
+
+.gallery-img_portraitWeb {
+    width: 100%;
+}
+
+.portraitWeb {
+    aspect-ratio: auto 1638 / 2048;
+    height: auto;
+    width: 98%;
+}
+
+.img-alignment_right {
+    display: block;
+    margin-left: auto;
+}
+
+.gallery-img_caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 98%;
+}
