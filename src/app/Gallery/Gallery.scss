@@ -1,18 +1,15 @@
 @import '../variables.module.scss';
 
 #gallery {
-    aspect-ratio: auto 2048 / 1280;
     display: flex;
     height: auto;
     justify-content: space-around;
+    margin-bottom: 7rem;
     width: 100%;
     &_banner {
         display: flex;
         height: 50%;
-        margin: {
-            bottom: 20rem;
-            top: auto;
-        }
+        margin-top: 10rem;
         width: 100%;
     }
 }
