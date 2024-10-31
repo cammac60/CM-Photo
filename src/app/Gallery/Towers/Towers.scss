@@ -2,10 +2,21 @@
 
 .gallery-images-wrapper {
     display: grid;
+    font: {
+        family: $main-font;
+        size: 1.2rem;
+        weight: normal;
+    }
     height: auto;
+    padding: {
+        bottom: 2rem;
+        top: 4rem;
+    }
     width: 100%;
 }
 
-#towers_wrapper {
-    grid-template-columns: repeat(2);
+#towers-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
 }
