@@ -66,3 +66,12 @@
     }
 }
 
+#active_true {
+    color: $tertiary-color;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: $tertiary-color-dark;
+    }
+}
