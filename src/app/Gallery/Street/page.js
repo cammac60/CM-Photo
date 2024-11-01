@@ -3,7 +3,7 @@ import { getPhotosByGalleryType } from '../../apiCalls.js';
 import ImageTile from '../../Image/page.js';
 
 const Street = async () => {
-    const data = await getPhotosByGalleryType('Architecture');
+    const data = await getPhotosByGalleryType('Street');
     return (
         <div id="street-wrapper" className="gallery-images-wrapper">
             <div className='gallery-info'>
