@@ -16,7 +16,37 @@
     width: 80%;
 }
 
-.img-alignment_right, .img-alignment_left {
+.gallery-img_landscapeWeb {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.landscapeWeb {
+    aspect-ratio: auto 2048 / 1280;
+    height: auto;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    width: 80%;
+}
+
+.gallery-img_landscapeWebWide {
+    grid-column: span 2;
+    width: 100%;
+} 
+
+.landscapeWebWide {
+    aspect-ratio: auto 2048 / 512;
+    height: auto;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    width: 100%;
+}
+
+.img-alignment_right, .img-alignment_left, .img-alignment_landscape {
     display: block;
     margin-left: auto;
     margin-right: auto;
