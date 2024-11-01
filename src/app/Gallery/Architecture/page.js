@@ -11,7 +11,7 @@ const Architecture = async () => {
                     Architecture
                 </h3>
                 <p className='gallery-info_text'>
-                In my Architecture series I try to capture the beauty in all forms of design and architecture. From the cosmically aligned stone temples of Teotihuacan, to the intricate tiles adorning the facades of Lisbon, to the stone carving of Mt. Rushmore. 
+                My Architecture series tries to capture the beauty in all forms of design and architecture. From the cosmically aligned stone temples of Teotihuacan, to the intricate tiles adorning the facades of Lisbon, to the stone carving of Mt. Rushmore. 
                 </p>
             </div>
             {data.map((item, index) => (
