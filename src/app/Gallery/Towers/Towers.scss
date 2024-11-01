@@ -4,7 +4,6 @@
     display: grid;
     font: {
         family: $main-font;
-        size: 1.2rem;
         weight: normal;
     }
     height: auto;
@@ -19,4 +18,41 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
     row-gap: 2rem;
+}
+
+.gallery-image {
+    font-size: 1.2rem;
+}
+
+.gallery-info {
+    border-color: $secondary-color;
+    border-width: 10px;
+    grid-column: span 2;
+    text-align: center;
+    width: 100%;
+    &_header {
+        color: $tertiary-color;
+        font: {
+            size: 3.5rem;
+            weight: normal;
+        }
+        margin: {
+            bottom: 0;
+            left: auto;
+            right: auto;
+            top: 0;
+        }
+        text-align: center;
+        width: 40%;
+    }
+    &_text {
+        font-weight: normal;
+        margin: {
+            bottom: 4rem;
+            left: auto;
+            right: auto;
+        }
+        text-align: center;
+        width: 40%;
+    }
 }
