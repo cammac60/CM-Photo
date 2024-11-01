@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'
 const Header = () => {
     let pathname = usePathname();
     pathname = pathname.includes('/Gallery') ? '/Gallery' : pathname;
-    console.log(pathname)
     const activePath = {
         home: false,
         about: false,
