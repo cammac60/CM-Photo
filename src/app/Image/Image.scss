@@ -46,6 +46,16 @@
     width: 100%;
 }
 
+.gallery-img_portraitWebTall {
+    width: 100%;
+}
+
+.portraitWebTall {
+    aspect-ratio: auto 1365 / 2048;
+    height: auto;
+    width: 66%;
+}
+
 .img-alignment_right, .img-alignment_left, .img-alignment_landscape {
     display: block;
     margin-left: auto;
