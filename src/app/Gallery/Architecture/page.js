@@ -1,4 +1,4 @@
-// import './Towers.scss';
+import './Architecture.scss';
 import { getPhotosByGalleryType } from '../../apiCalls.js';
 import ImageTile from '../../Image/page.js';
 
