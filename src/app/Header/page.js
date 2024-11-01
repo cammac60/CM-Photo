@@ -1,12 +1,8 @@
 'use client'
 import './Header.scss';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 const Header = () => {
-
-    const router = useRouter();
-
     return (
         <div id="header-wrapper">
             <div id="header-left">
