@@ -508,7 +508,7 @@ export const rawImageData = [
                 id: "bf6d9aef-397b-45e6-808a-a5dfbdd8e100",
                 caption: "Seoul, South Korea",
                 storeURL: "",
-                variantSize: "portraitWeb",
+                variantSize: "portraitWebTall",
                 order: 15,
                 isBanner: false
             },
