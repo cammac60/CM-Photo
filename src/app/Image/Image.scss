@@ -13,16 +13,17 @@
 .portraitWeb {
     aspect-ratio: auto 1638 / 2048;
     height: auto;
-    width: 98%;
+    width: 80%;
 }
 
-.img-alignment_right {
+.img-alignment_right, .img-alignment_left {
     display: block;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery-img_caption {
     text-align: center;
     margin-top: 0.5rem;
-    width: 98%;
+    width: 80%;
 }
