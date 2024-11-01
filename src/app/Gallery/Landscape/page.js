@@ -1,4 +1,5 @@
 import './Landscape.scss';
+import '../Gallery.scss';
 import { getPhotosByGalleryType } from '../../apiCalls.js';
 import ImageTile from '../../Image/page.js';
 
