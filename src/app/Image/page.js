@@ -16,12 +16,12 @@ const ImageTile = async props => {
             baseHeight = 2048;
             break;
         case 'landscapeWeb':
-            alignment = 'lanscape';
+            alignment = 'landscape';
             baseWidth = 2048;
             baseHeight = 1280;
             break;
         case 'landscapeWebWide':
-            alignment = 'lanscape';
+            alignment = 'landscape';
             baseWidth = 2048;
             baseHeight = 512;
             break;
