@@ -346,12 +346,30 @@ export const rawImageData = [
         category: "Street",
         images: [
             {
+                name: "Harlem_Biker2_Blog.JPG",
+                id: "dafa4fe2-89a2-4895-995a-d8b8f62fa400",
+                caption: "Haarlem, Netherlands",
+                storeURL: "",
+                variantSize: "portraitWebTall",
+                order: 1,
+                isBanner: false
+            },
+            {
+                name: "Amsterdam_Runner_Blog.JPG",
+                id: "d33f2c98-478e-45b2-a5fb-6319afcb8c00",
+                caption: "Amsterdam, Netherlands",
+                storeURL: "",
+                variantSize: "portraitWebTall",
+                order: 2,
+                isBanner: false
+            },
+            {
                 name: "Tokyo_Street_Blog.JPG",
                 id: "9b8b1c85-0f2e-4f36-c8b1-21c4f5dbaa00",
                 caption: "Tokyo, Japan",
                 storeURL: "",
                 variantSize: "portraitWebTall",
-                order: 1,
+                order: 3,
                 isBanner: false
             },
             {
@@ -360,7 +378,7 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 2,
+                order: 4,
                 isBanner: true
             },
             {
@@ -369,7 +387,7 @@ export const rawImageData = [
                 caption: "Berlin, Germany",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 3,
+                order: 5,
                 isBanner: false
             },
             {
@@ -378,7 +396,7 @@ export const rawImageData = [
                 caption: "Denver, Colorado, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 4,
+                order: 6,
                 isBanner: false
             },
             {
@@ -387,7 +405,7 @@ export const rawImageData = [
                 caption: "Austin, Texas, USA",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 5,
+                order: 7,
                 isBanner: false
             },
             {
@@ -396,7 +414,7 @@ export const rawImageData = [
                 caption: "Kyoto, Japan",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 6,
+                order: 8,
                 isBanner: false
             },
             {
@@ -405,7 +423,7 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 7,
+                order: 9,
                 isBanner: false
             },
             {
@@ -414,7 +432,7 @@ export const rawImageData = [
                 caption: "Lisbon, Portugal",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 8,
+                order: 10,
                 isBanner: false
             },
             {
@@ -423,7 +441,7 @@ export const rawImageData = [
                 caption: "California, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 9,
+                order: 11,
                 isBanner: false
             },
             {
@@ -432,7 +450,7 @@ export const rawImageData = [
                 caption: "Berlin, Germany",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 10,
+                order: 12,
                 isBanner: false
             },
             {
@@ -441,7 +459,7 @@ export const rawImageData = [
                 caption: "Tokyo, Japan",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 11,
+                order: 13,
                 isBanner: false
             },
             {
@@ -450,7 +468,25 @@ export const rawImageData = [
                 caption: "Seattle, Washington, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 12,
+                order: 14,
+                isBanner: false
+            },
+            {
+                name: "Amsterdam_Couple_Blog.JPG",
+                id: "9b950dbe-5c9d-45a5-02e4-2030b6461000",
+                caption: "Amsterdam, Netherlands",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 15,
+                isBanner: false
+            },
+            {
+                name: "Harlem_Biker_Blog.JPG",
+                id: "a9b69494-1ea5-4b6f-5457-294b51093b00",
+                caption: "Haarlem, Netherlands",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 16,
                 isBanner: false
             }
         ]
