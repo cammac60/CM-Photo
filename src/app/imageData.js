@@ -495,12 +495,21 @@ export const rawImageData = [
         category: "Landscape",
         images: [
             {
+                name: "Paris_Blog.JPG",
+                id: "60f1c50d-fa4e-4b1e-d163-766f1f804100",
+                caption: "Paris, France",
+                storeURL: "",
+                variantSize: "landscapeWeb",
+                order: 1,
+                isBanner: false
+            },
+            {
                 name: "La_segrada3_Blog.JPG",
                 id: "57ae8729-72c6-478e-2e39-c7e873254700",
                 caption: "Barcelona, Spain",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 1,
+                order: 2,
                 isBanner: false
             },
             {
@@ -509,7 +518,7 @@ export const rawImageData = [
                 caption: "San Juan, Puerto Rico",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 2,
+                order: 3,
                 isBanner: false
             },
             {
@@ -518,7 +527,7 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 3,
+                order: 4,
                 isBanner: true
             },
             {
@@ -527,7 +536,7 @@ export const rawImageData = [
                 caption: "Monte Verde, Costa Rica",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 4,
+                order: 5,
                 isBanner: false
             },
             {
@@ -536,7 +545,7 @@ export const rawImageData = [
                 caption: "Lower Blue Lake, Breckenridge, Colorado, USA",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 5,
+                order: 6,
                 isBanner: false
             },
             {
@@ -545,7 +554,7 @@ export const rawImageData = [
                 caption: "Newbury Park, California, USA",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 6,
+                order: 7,
                 isBanner: false
             },
             {
@@ -554,7 +563,7 @@ export const rawImageData = [
                 caption: "Kyoto, Japan",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 7,
+                order: 8,
                 isBanner: false
             },
             {
@@ -563,7 +572,7 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 8,
+                order: 9,
                 isBanner: false
             },
             {
@@ -572,7 +581,7 @@ export const rawImageData = [
                 caption: "Berlin, Germany",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 9,
+                order: 10,
                 isBanner: false
             },
             {
@@ -581,7 +590,7 @@ export const rawImageData = [
                 caption: "Breckenridge, Colorado, USA",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 10,
+                order: 11,
                 isBanner: false
             },
             {
@@ -590,7 +599,7 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 11,
+                order: 12,
                 isBanner: false
             },
             {
@@ -599,7 +608,7 @@ export const rawImageData = [
                 caption: "Barcelona, Spain",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 12,
+                order: 13,
                 isBanner: false
             },
             {
@@ -608,7 +617,7 @@ export const rawImageData = [
                 caption: "Prague, Czechia",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 13,
+                order: 14,
                 isBanner: false
             },
             {
@@ -617,7 +626,7 @@ export const rawImageData = [
                 caption: "Joshua Tree National Park, California, USA",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 13,
+                order: 15,
                 isBanner: false
             },
             {
@@ -626,7 +635,7 @@ export const rawImageData = [
                 caption: "Sintra, Portugal",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 14,
+                order: 16,
                 isBanner: false
             },
             {
@@ -635,7 +644,16 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWebTall",
-                order: 15,
+                order: 17,
+                isBanner: false
+            },
+            {
+                name: "Canary_Warf_Blog.JPG",
+                id: "544944ad-900e-44a2-b785-32cea5934300",
+                caption: "London, England",
+                storeURL: "",
+                variantSize: "landscapeWebWide",
+                order: 18,
                 isBanner: false
             },
             {
@@ -644,7 +662,7 @@ export const rawImageData = [
                 caption: "Mt. Fuji, Japan",
                 storeURL: "",
                 variantSize: "landscapeWeb",
-                order: 16,
+                order: 19,
                 isBanner: false
             },
             {
@@ -653,7 +671,7 @@ export const rawImageData = [
                 caption: "Mt. Princeton, Colorado, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 17,
+                order: 20,
                 isBanner: false
             },
             {
@@ -662,7 +680,7 @@ export const rawImageData = [
                 caption: "Los Angeles, California, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 18,
+                order: 21,
                 isBanner: false
             },
             {
@@ -671,7 +689,7 @@ export const rawImageData = [
                 caption: "Los Angeles, California, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 19,
+                order: 22,
                 isBanner: false
             },
             {
@@ -680,7 +698,7 @@ export const rawImageData = [
                 caption: "Seoul, South Korea",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 20,
+                order: 23,
                 isBanner: false
             },
             {
@@ -689,7 +707,7 @@ export const rawImageData = [
                 caption: "Glenwood Canyon, Colorado, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 21,
+                order: 24,
                 isBanner: false
             },
             {
@@ -698,7 +716,7 @@ export const rawImageData = [
                 caption: "Badlands National Park, South Dakota, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 22,
+                order: 25,
                 isBanner: false
             }
         ]
