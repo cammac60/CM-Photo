@@ -321,6 +321,24 @@ export const rawImageData = [
                 variantSize: "portraitWeb",
                 order: 13,
                 isBanner: false
+            },
+            {
+                name: "Amsterdam_Rainbow_Blog.JPG",
+                id: "ae5b3be9-0a8f-474a-cec1-32c99b8c5c00",
+                caption: "Amsterdam, Netherlands",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 14,
+                isBanner: false
+            },
+            {
+                name: "London_Eye_Blog.JPG",
+                id: "9aeac3cd-0ac3-4578-8c11-f2e917fa7b00",
+                caption: "London Eye, London, England",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 15,
+                isBanner: false
             }
         ]
     },
