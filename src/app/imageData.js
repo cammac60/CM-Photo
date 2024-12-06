@@ -68,7 +68,7 @@ export const rawImageData = [
             {
                 name: "Shard_Blog.JPG",
                 id: "ee27f364-548a-4106-efba-19817d264f00",
-                caption: "The Shard, Lodnon, England",
+                caption: "The Shard, London, England",
                 storeURL: "",
                 variantSize: "portraitWeb",
                 order: 8,
