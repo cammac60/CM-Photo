@@ -12,12 +12,30 @@ export const rawImageData = [
                 isBanner: false
             },
             {
+                name: "Big_Ben_Blog.JPG",
+                id: "afeded93-7990-4d29-8a53-d012e32d9e00",
+                caption: "Elizabeth Tower, London, England",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 2,
+                isBanner: false
+            },
+            {
                 name: "Vienna_Tower_Blog.JPG",
                 id: "3f38fcd8-30c2-4581-1a22-e441d9f0fb00",
                 caption: "St. Stephen’s Cathedral, Vienna, Austria",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 2,
+                order: 3,
+                isBanner: false
+            },
+            {
+                name: "Antwerp_Modern_Blog.JPG",
+                id: "53549ae1-f597-4505-f38d-c955b7c46100",
+                caption: "Boerentoren, Antwerp, Belgium",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 4,
                 isBanner: false
             },
             {
@@ -26,7 +44,7 @@ export const rawImageData = [
                 caption: "Atomic Bomb Dome, Hiroshima, Japan",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 3,
+                order: 5,
                 isBanner: false
             },
             {
@@ -35,7 +53,43 @@ export const rawImageData = [
                 caption: "La Sagrada Familia, Barcelona, Spain",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 4,
+                order: 6,
+                isBanner: false
+            },
+            {
+                name: "Ghent_Tower_Blog.JPG",
+                id: "71f6b190-c4ba-4a67-4b7a-13a312bcbd00",
+                caption: "Belfry of Ghent, Ghent, Belgium",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 7,
+                isBanner: false
+            },
+            {
+                name: "Shard_Blog.JPG",
+                id: "ee27f364-548a-4106-efba-19817d264f00",
+                caption: "The Shard, Lodnon, England",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 8,
+                isBanner: false
+            },
+            {
+                name: "Eiffel_Blog.JPG",
+                id: "dd49c2ce-fa13-480e-2320-b88cd08cf500",
+                caption: "Eiffel Tower, Paris, France",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 9,
+                isBanner: false
+            },
+            {
+                name: "Harlem_Tower_Blog.JPG",
+                id: "ac5b6d07-d6d9-46b1-5eeb-931a86b1e200",
+                caption: "Grote Kerk, Haarlem, Netherlands",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 10,
                 isBanner: false
             },
             {
@@ -44,7 +98,7 @@ export const rawImageData = [
                 caption: "New Town Hall, Munich, Germany",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 5,
+                order: 11,
                 isBanner: false
             },
             {
@@ -53,7 +107,7 @@ export const rawImageData = [
                 caption: "Tower of the Americas, San Antonio, Texas, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 6,
+                order: 12,
                 isBanner: false
             },
             {
@@ -62,7 +116,7 @@ export const rawImageData = [
                 caption: "Edificio Capitol, Madrid, Spain",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 7,
+                order: 13,
                 isBanner: false
             },
             {
@@ -71,7 +125,7 @@ export const rawImageData = [
                 caption: "Old Town Hall, Prague, Czechia",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 8,
+                order: 14,
                 isBanner: false
             },
             {
@@ -80,7 +134,7 @@ export const rawImageData = [
                 caption: "Seville Cathedral, Seville, Spain",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 9,
+                order: 15,
                 isBanner: false
             },
             {
@@ -89,7 +143,7 @@ export const rawImageData = [
                 caption: "Senso-ji Temple Pagoda, Tokyo, Japan",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 10,
+                order: 16,
                 isBanner: false
             },
             {
@@ -98,7 +152,7 @@ export const rawImageData = [
                 caption: "Texas State Capitol, Austin, Texas, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 11,
+                order: 17,
                 isBanner: false
             },
             {
@@ -107,7 +161,16 @@ export const rawImageData = [
                 caption: "Church of Our Lady before Tyn, Prague, Czechia",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 12,
+                order: 18,
+                isBanner: true
+            },
+            {
+                name: "Ghent_Clock_Blog.JPG",
+                id: "6b4eccea-2a3b-4c95-e99d-2ceca93cec00",
+                caption: "Old Post Office, Ghent, Belgium",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 19,
                 isBanner: true
             },
             {
@@ -116,7 +179,7 @@ export const rawImageData = [
                 caption: "NTT Docomo Yoyogi Building, Tokyo, Japan",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 13,
+                order: 20,
                 isBanner: false
             },
             {
@@ -125,7 +188,16 @@ export const rawImageData = [
                 caption: "New Hampshire State House, Concord, New Hampshire, USA",
                 storeURL: "",
                 variantSize: "portraitWeb",
-                order: 13,
+                order: 21,
+                isBanner: false
+            },
+            {
+                name: "Antwerp_Blog.JPG",
+                id: "db65ff17-9c19-443d-930b-44fd0b172500",
+                caption: "Cathedral of Our Lady, Anwerp, Belgium",
+                storeURL: "",
+                variantSize: "portraitWeb",
+                order: 22,
                 isBanner: false
             }
         ]
