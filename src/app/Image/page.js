@@ -1,27 +1,24 @@
+'use client';
 import Image from 'next/image';
 import './Image.scss';
 
-const ImageTile = async props => {
+const ImageTile = props => {
     const { url, caption, variantSize, order } = props.props;
     let baseHeight, baseWidth, alignment;
     switch (variantSize) {
         case 'portraitWeb':
-            alignment = order % 2 === 0 ? 'right' : 'left';
             baseWidth = 1638;
             baseHeight = 2048;
             break;
         case 'portraitWebTall':
-            alignment = order % 2 === 0 ? 'right' : 'left';
             baseWidth = 1365;
             baseHeight = 2048;
             break;
         case 'landscapeWeb':
-            alignment = 'landscape';
             baseWidth = 2048;
             baseHeight = 1280;
             break;
         case 'landscapeWebWide':
-            alignment = 'landscape';
             baseWidth = 2048;
             baseHeight = 512;
             break;
