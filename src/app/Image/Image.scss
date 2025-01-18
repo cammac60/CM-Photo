@@ -1,69 +1,64 @@
 @import '../variables.module.scss';
 
 .gallery-img {
-    &:hover {
-        background-color: $tertiary-color-transparent;
+    height: 100%;
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
-.gallery-img_portraitWeb {
-    width: 100%;
-}
+ .gallery-img_menu-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    width:10%;
+ }
+
+ .gallery-img_menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font: {
+        family: $main-font;
+        size: 1rem;
+    }
+    outline: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: $tertiary-color;
+    }
+    width: 45%;
+ }
+
+ .gallery-img_menu-divider {
+    text-align: center;
+    width: 5%;
+ }
 
 .portraitWeb {
     aspect-ratio: auto 1638 / 2048;
-    height: auto;
-    width: 80%;
-}
-
-.gallery-img_landscapeWeb {
-    grid-column: span 2;
-    width: 100%;
 }
 
 .landscapeWeb {
     aspect-ratio: auto 2048 / 1280;
-    height: auto;
-    margin: {
-        left: auto;
-        right: auto;
-    }
-    width: 80%;
 }
-
-.gallery-img_landscapeWebWide {
-    grid-column: span 2;
-    width: 100%;
-} 
 
 .landscapeWebWide {
     aspect-ratio: auto 2048 / 512;
-    height: auto;
-    margin: {
-        left: auto;
-        right: auto;
-    }
-    width: 100%;
-}
-
-.gallery-img_portraitWebTall {
-    width: 100%;
 }
 
 .portraitWebTall {
     aspect-ratio: auto 1365 / 2048;
-    height: auto;
-    width: 66%;
-}
-
-.img-alignment_right, .img-alignment_left, .img-alignment_landscape {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .gallery-img_caption {
     text-align: center;
     margin-top: 0.5rem;
-    width: 80%;
 }

@@ -14,10 +14,6 @@ export const getImageVariantUrls = async imageID => {
         }
     };
     const response = await fetch(fullURL, payload);
-    // if(response.status !== 200) {
-    //     console.log(response)
-    //     throw new Error('There was a problem retreiving the image URL(s)');
-    // }
     const resJSON = await response.json();
     return resJSON.result.variants;
 };
