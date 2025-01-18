@@ -5,12 +5,12 @@ import { rawImageData } from './imageData.js';
 const baseUrl = 'https://api.cloudflare.com/client/v4/accounts/';
 
 export const getImageVariantUrls = async imageID => {
-    const accountID = process.env.ACCOUNT_ID;
+    const accountID = process.env.NEXT_PUBLIC_ACCOUNT_ID;
     const fullURL = `${baseUrl}${accountID}/images/v1/${imageID}`;
     const payload = {
         headers: {
             'Content-Type': 'application/json',
-            Authorization: process.env.API_KEY
+            Authorization: process.env.NEXT_PUBLIC_API_KEY
         }
     };
     const response = await fetch(fullURL, payload);
@@ -29,7 +29,7 @@ export const getImage = async (url, type) => {
 };
 
 export const getBannerImage = async () => {
-    const bannerImgUrl = process.env.BANNER_IMG_ID;
+    const bannerImgUrl = process.env.NEXT_PUBLIC_BANNER_IMG_ID;
     return getImage(bannerImgUrl, 'landscapeWeb');
 };
 
