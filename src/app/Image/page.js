@@ -39,12 +39,13 @@ const ImageTile = props => {
     };
     return (
         <div className={`gallery-img_${variantSize} gallery-img`}>
+                <div className='gallery-img_menu-controls'>
+                    <button className='gallery-img_menu-button' onClick={() => updateImage('previous')}>Prev</button>
+                    <p className='gallery-img_menu-divider'>/</p>
+                    <button className='gallery-img_menu-button' onClick={() => updateImage('next')}>Next</button>
+                </div>
             <div className='gallery-img_menu'>
                 <p className={`gallery-img_caption img-alignment_${alignment}`}>{caption}</p>
-                <div className='gallery-img_menu-controls'>
-                    <button onClick={() => updateImage('next')}>Next</button>
-                    <button onClick={() => updateImage('previous')}>Previous</button>
-                </div>
                 <a>Purchase</a>
             </div>
             <Image src={url} className={`${variantSize} img-alignment_${alignment}`} alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={baseHeight} width={baseWidth} />
