@@ -11,9 +11,7 @@ const Towers = async () => {
                     Towers
                 </h3>
             </div>
-            {data.map((item, index) => (
-                <ImageTile key={index} props={item} />
-            ))}
+            <ImageTile props={data} />
         </div>
     );
 };
