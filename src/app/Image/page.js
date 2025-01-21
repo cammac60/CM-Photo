@@ -17,6 +17,7 @@ const ImageTile = props => {
             return prevNum;
         });
     };
+    let counter = `${currentImageNum + 1} / ${lastPage}`;
     let { url, caption, variantSize } = props.props[currentImageNum];
     let baseHeight, baseWidth;
     switch (variantSize) {
@@ -52,6 +53,7 @@ const ImageTile = props => {
                         <p className='gallery-img_menu-divider'>/</p>
                         <button className='gallery-img_menu-button menu-button_next' onClick={() => updateImage('next')}>Next</button>
                     </div>
+                    <p className='gallery-img_counter'>{counter}</p>
                 </div>
             </div>
         </div>
