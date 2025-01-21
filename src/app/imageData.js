@@ -350,7 +350,7 @@ export const rawImageData = [
                 id: "dafa4fe2-89a2-4895-995a-d8b8f62fa400",
                 caption: "Haarlem, Netherlands",
                 storeURL: "",
-                variantSize: "portraitWebTall",
+                variantSize: "portraitWeb",
                 order: 1,
                 isBanner: false
             },
@@ -359,7 +359,7 @@ export const rawImageData = [
                 id: "d33f2c98-478e-45b2-a5fb-6319afcb8c00",
                 caption: "Amsterdam, Netherlands",
                 storeURL: "",
-                variantSize: "portraitWebTall",
+                variantSize: "portraitWeb",
                 order: 2,
                 isBanner: false
             },
