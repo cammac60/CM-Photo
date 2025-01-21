@@ -9,17 +9,32 @@
     }
 }
 
- .gallery-img_menu-controls {
+.gallery-img-menu {
+    display: flex;
+    max-height: 2.5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gallery-img_menu-controls {
+    display: flex;
+    height: 2vh;
+    justify-content: space-between;
+    width:10%;
+}
+
+.gallery-img_menu-text {
     display: flex;
     justify-content: space-between;
-    margin: {
-        left: auto;
-        right: auto;
-    }
-    width:10%;
- }
+    width: 32rem;
+}
 
- .gallery-img_menu-button {
+.gallery-img_caption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.gallery-img_menu-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -35,12 +50,38 @@
         color: $tertiary-color;
     }
     width: 45%;
- }
+}
 
  .gallery-img_menu-divider {
+    margin-top: 0.3rem;
     text-align: center;
     width: 5%;
  }
+
+ .gallery-img_store-wrapper {
+    align-items: center;
+    background-color: $tertiary-color;
+    border-radius: 2px;
+    display: flex;
+    height: 55%;
+    justify-content: space-evenly;
+    margin-top: 0.4rem;
+    padding: {
+        bottom: 0.1rem;
+        left: 1rem;
+        right: 1rem;
+        top: 0.1rem;
+    }
+ }
+
+ .gallery-img_store-link {
+
+ }
+
+.store-link_image {
+    height: 70%;
+    width: auto;
+}
 
 .portraitWeb {
     aspect-ratio: auto 1638 / 2048;
@@ -48,6 +89,8 @@
 
 .landscapeWeb {
     aspect-ratio: auto 2048 / 1280;
+    height: auto;
+    width: 100%;
 }
 
 .landscapeWebWide {
@@ -56,9 +99,4 @@
 
 .portraitWebTall {
     aspect-ratio: auto 1365 / 2048;
-}
-
-.gallery-img_caption {
-    text-align: center;
-    margin-top: 0.5rem;
 }

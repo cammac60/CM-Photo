@@ -71,16 +71,22 @@
     &_header {
         color: $tertiary-color;
         font: {
-            size: 3.5rem;
+            family: $main-font;
+            size: 3rem;
             weight: normal;
         }
         margin: {
             bottom: 0;
-            left: auto;
-            right: auto;
-            top: 0;
+            top: -0.1rem;
         }
-        text-align: center;
-        width: 40%;
+        text-align: left;
     }
+}
+
+.gallery-img_main-panel {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    width: 70%;
 }

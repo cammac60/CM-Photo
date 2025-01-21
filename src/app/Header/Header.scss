@@ -7,14 +7,14 @@
     justify-content: space-between;
     &_title {
         font: {
-            size: 5rem;
+            size: 4rem;
             weight: normal;
         }
         margin: 0;
     }
     &_sub-title {
         font: {
-            size: 2rem;
+            size: 1.5rem;
             weight: normal;
         }
         margin: {
@@ -30,6 +30,7 @@
 
 #header-right {
     display: flex;
+    height: 5rem;
     justify-content: space-between;
     margin-left: auto;
     text-align: left;
@@ -46,14 +47,13 @@
         weight: normal;
     }
     justify-content: space-between;
-    margin-bottom: 1rem;
     width: 100%;
 }
 
 .menu_link {
     color: $secondary-color;
     font: {
-        size: 1.5rem;
+        size: 1.3rem;
         weight: normal;
     }
     margin-top: auto;
