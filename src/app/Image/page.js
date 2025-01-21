@@ -39,8 +39,8 @@ const ImageTile = props => {
             break;
     };
     return (
-        <div className={`gallery-img_${variantSize} gallery-img`}>
-            <div className='gallery-img_main-panel'>
+        <div className='gallery-img'>
+            <div className={`gallery-img_${variantSize} gallery-img_main-panel`}>
                 <Image src={url} className={`${variantSize}`} alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={baseHeight} width={baseWidth} />
                 <div className='gallery-img_menu-text'>
                     <p className={`gallery-img_caption`}>{caption}</p>
