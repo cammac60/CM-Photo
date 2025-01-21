@@ -60,7 +60,7 @@
     height: auto;
     padding: {
         bottom: 2rem;
-
+        top: 1rem;
     }
     width: 100%;
 }
@@ -81,12 +81,4 @@
         }
         text-align: left;
     }
-}
-
-.gallery-img_main-panel {
-    margin: {
-        left: auto;
-        right: auto;
-    }
-    width: 70%;
 }
