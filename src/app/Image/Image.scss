@@ -25,19 +25,26 @@
     display: flex;
     height: 2vh;
     justify-content: space-between;
-    width:8%;
+    margin: {
+        left: auto;
+        right: auto;
+        top: 5%;
+    }
+    width:15%;
 }
 
 .gallery-img_menu-text {
     height: 50%;
     margin: {
         bottom: auto;
+        left: auto;
         top: auto;
     }
     width: 30%;
 }
 
 .gallery-img_caption {
+    font-size: 2rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -131,4 +138,6 @@
 
 .portraitWebTall {
     aspect-ratio: auto 1365 / 2048;
+    height: auto;
+    width: 29%;
 }

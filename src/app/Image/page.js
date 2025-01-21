@@ -39,11 +39,6 @@ const ImageTile = props => {
     };
     return (
         <div className={`gallery-img_${variantSize} gallery-img`}>
-            <div className='gallery-img_menu-controls'>
-                <button className='gallery-img_menu-button menu-button_prev' onClick={() => updateImage('previous')}>Prev</button>
-                <p className='gallery-img_menu-divider'>/</p>
-                <button className='gallery-img_menu-button menu-button_next' onClick={() => updateImage('next')}>Next</button>
-            </div>
             <div className='gallery-img_main-panel'>
                 <Image src={url} className={`${variantSize}`} alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={baseHeight} width={baseWidth} />
                 <div className='gallery-img_menu-text'>
@@ -51,6 +46,11 @@ const ImageTile = props => {
                     <div className='gallery-img_store-wrapper'>
                         <a className='gallery-img_store-link'>Purchase</a>
                         <Image className='store-link_image' src='/images/external-link-svgrepo-com.svg' alt='Link to purchase' height={15} width={15} />
+                    </div>
+                    <div className='gallery-img_menu-controls'>
+                        <button className='gallery-img_menu-button menu-button_prev' onClick={() => updateImage('previous')}>Prev</button>
+                        <p className='gallery-img_menu-divider'>/</p>
+                        <button className='gallery-img_menu-button menu-button_next' onClick={() => updateImage('next')}>Next</button>
                     </div>
                 </div>
             </div>
