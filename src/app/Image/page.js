@@ -17,7 +17,7 @@ const ImageTile = props => {
             return prevNum;
         });
     };
-    let counter = `${currentImageNum + 1} / ${lastPage}`;
+    let counter = `${currentImageNum + 1} / ${lastPage + 1}`;
     let { url, caption, variantSize } = props.props[currentImageNum];
     let baseHeight, baseWidth;
     switch (variantSize) {
