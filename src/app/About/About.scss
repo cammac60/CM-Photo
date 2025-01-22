@@ -10,10 +10,11 @@
         background-size: cover;
         display: flex;
         height: auto;
+        margin-top: 1rem;
         width: 100%;
     }
     &_text {
-        width: 70%;
+        width: 80%;
     }
     &_text-wrapper {
         align-items: center;
@@ -22,12 +23,13 @@
         display: flex;
         font: {
             family: $main-font;
-            size: 1.8rem;
+            size: 1.6rem;
             weight: normal;
         }
         height: 90%;
         justify-content: space-around;
         margin: auto;
+        padding-right: 4rem;
         width: 95%;
     }
 }
@@ -44,4 +46,17 @@
     &:active {
         color: $tertiary-color-dark;
     }
+}
+
+.about_photo {
+    border-radius: 90px;
+    display: inline;
+    margin: {
+        bottom: auto;
+        left: auto;
+        right: 4rem;
+        top: 10rem;
+    }
+    object-fit: cover;
+    object-position: 0 0;
 }

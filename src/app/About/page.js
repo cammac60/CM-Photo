@@ -10,7 +10,7 @@ const About = async () => {
     <div id="about">
       <div id="about_background" style={{backgroundImage: `url(${imageUrl})`}} height={1280} width={2048} >
         <div id="about_text-wrapper">
-            <Image src='/images/profile.jpg' className='about_photo' alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={50} width={50} />
+            <Image src='/images/profile.jpg' className='about_photo' alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={200} width={200} />
             <p id="about_text">
               I am a Denver based hobbyist photographer with more than 15 years of experience. I am self taught and began photography as a teenager with an old SLR I found in my parent's basement. I eventually moved on to iPhone photography before eventually a DSLR. I mainly use my photography to document my travels and experiences and to share my interest in cities, architecture, and nature but I also have some experience doing portrait, nature, and concert photography. My style often involves removing context from my photos by isolating the subject. 
               <br />
