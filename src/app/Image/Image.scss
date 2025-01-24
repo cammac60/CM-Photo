@@ -134,6 +134,11 @@
     width: 25%;
 }
 
+.gallery-img_store-link {
+    color: $primary-color;
+    text-decoration: none;
+}
+
 .portraitWeb {
     aspect-ratio: auto 1638 / 2048;
     display: block;
