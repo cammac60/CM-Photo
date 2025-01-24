@@ -45,7 +45,7 @@ const ImageTile = props => {
                 <div className='gallery-img_menu-text'>
                     <p className={`gallery-img_caption`}>{caption}</p>
                     <div className={storeURL ? 'gallery-img_store-wrapper' : 'gallery-img_store-wrapper-disabled'}>
-                        <a className='gallery-img_store-link' href={storeURL ? storeURL : 'javascrip:void(0)'} target={storeURL ? '_blank' : ''}>Purchase</a>
+                        <a className='gallery-img_store-link' href={storeURL ? storeURL : 'javascrip:void(0)'} target={storeURL ? '_blank' : ''}>{storeURL ? 'Purchase' : 'Sold Out'}</a>
                         <Image className='store-link_image' src='/images/external-link-svgrepo-com.svg' alt='Link to purchase' height={15} width={15} />
                     </div>
                     <div className='gallery-img_menu-controls'>
