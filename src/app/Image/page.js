@@ -18,7 +18,7 @@ const ImageTile = props => {
         });
     };
     let counter = `${currentImageNum + 1} / ${lastPage + 1}`;
-    let { url, caption, variantSize } = props.props[currentImageNum];
+    let { url, caption, variantSize, storeURL } = props.props[currentImageNum];
     let baseHeight, baseWidth;
     switch (variantSize) {
         case 'portraitWeb':
@@ -44,8 +44,8 @@ const ImageTile = props => {
                 <Image src={url} className={`${variantSize}`} alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={baseHeight} width={baseWidth} />
                 <div className='gallery-img_menu-text'>
                     <p className={`gallery-img_caption`}>{caption}</p>
-                    <div className='gallery-img_store-wrapper'>
-                        <a className='gallery-img_store-link'>Purchase</a>
+                    <div className={storeURL ? 'gallery-img_store-wrapper' : 'gallery-img_store-wrapper-disabled'}>
+                        <a className='gallery-img_store-link' href={storeURL ? storeURL : 'javascrip:void(0)'} target={storeURL ? '_blank' : ''}>Purchase</a>
                         <Image className='store-link_image' src='/images/external-link-svgrepo-com.svg' alt='Link to purchase' height={15} width={15} />
                     </div>
                     <div className='gallery-img_menu-controls'>
