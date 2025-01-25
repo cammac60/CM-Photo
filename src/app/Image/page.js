@@ -5,7 +5,9 @@ import { useState } from 'react';
 
 const ImageTile = props => {
     const [currentImageNum, setCurrentImageNum] = useState(0);
-    const lastPage = props.props.length - 1;
+    const photoData = props.photoData
+    const lastPage = photoData.length - 1;
+    const galleryName = props.galleryName;
     const updateImage = type => {
         setCurrentImageNum(prevNum => {
             if (type === 'next') {
@@ -18,7 +20,7 @@ const ImageTile = props => {
         });
     };
     let counter = `${currentImageNum + 1} / ${lastPage + 1}`;
-    let { url, caption, variantSize } = props.props[currentImageNum];
+    let { url, caption, variantSize } = photoData[currentImageNum];
     let baseHeight, baseWidth;
     switch (variantSize) {
         case 'portraitWeb':
@@ -43,7 +45,7 @@ const ImageTile = props => {
             <div className='gallery-img_main-panel'>
                 <Image src={url} className={`${variantSize}`} alt="Image from API" quality={100} overrideSrc='/Img.jpg' height={baseHeight} width={baseWidth} />
                 <div className='gallery-img_menu-text'>
-                    <p className='gallery-img_menu-header'>Test</p>
+                    <p className='gallery-img_menu-header'>{galleryName}</p>
                     <p className={`gallery-img_caption`}>{caption}</p>
                     <div className='gallery-img_store-wrapper'>
                         <a className='gallery-img_store-link'>Purchase</a>

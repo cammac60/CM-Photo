@@ -3,10 +3,11 @@ import { getPhotosByGalleryType } from '../../apiCalls.js';
 import ImageTile from '../../Image/page.js';
 
 const Architecture = async () => {
-    const data = await getPhotosByGalleryType('Architecture');
+    const galleryName = 'Architecture';
+    const photoData = await getPhotosByGalleryType(galleryName);
     return (
         <div id="architecture-wrapper" className="gallery-images-wrapper">
-            <ImageTile props={data} />
+            <ImageTile galleryName={galleryName} photoData={photoData} />
         </div>
     );
 };
