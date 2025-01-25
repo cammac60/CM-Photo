@@ -20,7 +20,7 @@ const ImageTile = props => {
         });
     };
     let counter = `${currentImageNum + 1} / ${lastPage + 1}`;
-    let { url, caption, variantSize, storeURL } = props.props[currentImageNum];
+    let { url, caption, variantSize, storeURL } = photoData[currentImageNum];
     let baseHeight, baseWidth;
     switch (variantSize) {
         case 'portraitWeb':
