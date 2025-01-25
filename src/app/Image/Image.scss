@@ -153,13 +153,16 @@
     aspect-ratio: auto 1638 / 2048;
     display: block;
     height: 100%;
-    margin-right: auto;
+    margin-left: auto;
+    object-fit: contain;
     width: auto;
 }
 
 .landscapeWeb {
     aspect-ratio: auto 2048 / 1280;
     height: 100%;
+    max-width: 80%;
+    object-fit: contain;
     width: auto;
 }
 
@@ -168,13 +171,16 @@
     height: 40%;
     margin: {
         bottom: auto;
-        top: 7%;
+        top: 10%;
     }
+    max-width: 80%;
+    object-fit: contain;
     width: auto;
 }
 
 .portraitWebTall {
     aspect-ratio: auto 1365 / 2048;
     height: 100%;
+    margin-left: auto;
     width: auto;
 }
