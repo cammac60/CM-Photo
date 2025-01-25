@@ -32,8 +32,7 @@ const Header = () => {
                 <Link href="/" id={`active_${activePath.home}`} className="menu_link">Home</Link>
                 <Link href="/Gallery" id={`active_${activePath.gallery}`} className="menu_link">Gallery</Link>
                 <Link href="/About" id={`active_${activePath.about}`} className="menu_link">About</Link>
-                {/* TO DO: Add link to storefront */}
-                <Link href="/shop" id="_shop" className="menu_link">Shop</Link>
+                <a href="https://cameronmacraephoto.darkroom.com/" id="_shop" className="menu_link" target="_blank">Shop</a>
             </div>
         </div>
     )

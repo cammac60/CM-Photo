@@ -106,7 +106,7 @@
     width: 5%;
  }
 
- .gallery-img_store-wrapper {
+.gallery-img_store-wrapper {
     align-items: center;
     background-color: $tertiary-color;
     border-radius: 2px;
@@ -132,6 +132,28 @@
     &:active {
         background-color: $tertiary-color-dark;
     }
+}
+
+.gallery-img_store-wrapper-disabled {
+    align-items: center;
+    background-color: gray;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    color: $secondary-color;
+    justify-content: space-evenly;
+    margin: {
+        left: auto;
+        right: auto;
+        top: 0.4rem;
+    }
+    padding: {
+        bottom: 0.1rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        top: 0.1rem;
+    }
+    width: 20%;
  }
 
  .gallery-img_counter {
@@ -147,6 +169,11 @@
     display: block;
     height: auto;
     width: 25%;
+}
+
+.gallery-img_store-link {
+    color: $primary-color;
+    text-decoration: none;
 }
 
 .portraitWeb {
