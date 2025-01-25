@@ -13,15 +13,25 @@ export const getImageVariantUrls = async imageID => {
             Authorization: process.env.NEXT_PUBLIC_API_KEY
         }
     };
-    const response = await fetch(fullURL, payload);
-    const resJSON = await response.json();
-    return resJSON.result.variants;
+    try {
+        const response = await fetch(fullURL, payload);
+        const resJSON = await response.json();
+        return resJSON.result.variants;
+    } catch (error) {
+        console.log(error);
+        return;
+    }
 };
 
 export const getImage = async (url, type) => {
-    const result = await getImageVariantUrls(url);
-    const formattedUrl = result.filter(variant => variant.endsWith(type))[0];
-    return formattedUrl;
+    try {
+        const result = await getImageVariantUrls(url);
+        const formattedUrl = result.filter(variant => variant.endsWith(type))[0];
+        return formattedUrl;
+    } catch (error) {
+        console.log(error);
+        return;
+    }
 };
 
 export const getBannerImage = async () => {
@@ -30,14 +40,18 @@ export const getBannerImage = async () => {
 };
 
 export const sanitizeBannerData = async data => {
-    const sanitizedData = await Promise.all(
-        data.map(async image => {
-            const { id, variantSize, categoryName } = image;
-            const url = await getImage(id, variantSize);
-            return { url, categoryName }; 
-        })
-    );
-    return sanitizedData;
+    try {
+        const sanitizedData = await Promise.all(
+            data.map(async image => {
+                const { id, variantSize, categoryName } = image;
+                const url = await getImage(id, variantSize);
+                return { url, categoryName }; 
+            })
+        );
+        return sanitizedData;
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 export const getGalleryBannerImages = async () => {
@@ -49,8 +63,13 @@ export const getGalleryBannerImages = async () => {
         });
     };
     const unsanitizedData = bannerImagesData(rawImageData);
-    const imageData = await sanitizeBannerData(unsanitizedData);
-    return imageData;
+    try {
+        const imageData = await sanitizeBannerData(unsanitizedData);
+        return imageData;
+    } catch (error) {
+        console.log(error);
+        return;
+    }
 };
 
 export const getPhotosByGalleryType = async type => {
@@ -58,12 +77,17 @@ export const getPhotosByGalleryType = async type => {
         return data.category === type ? true : false;
     });
     const imageData = [ ...filteredImages[0].images ];
-    const sanitizedImageData = await Promise.all(
-        imageData.map(async image => {
-            const { id, caption, name, storeURL, variantSize, order } = image;
-            const url = await getImage(id, variantSize);
-            return { id, caption, name, storeURL, variantSize, order, url };
-        })
-    );
-    return sanitizedImageData;
+    try {
+        const sanitizedImageData = await Promise.all(
+            imageData.map(async image => {
+                const { id, caption, name, storeURL, variantSize, order } = image;
+                const url = await getImage(id, variantSize);
+                return { id, caption, name, storeURL, variantSize, order, url };
+            })
+        );
+        return sanitizedImageData;
+    } catch (error) {
+        console.log(error);
+        return;
+    }
 };
