@@ -46,6 +46,21 @@
     width: 20%;
 }
 
+.gallery-img_menu-header {
+    color: $tertiary-color;
+    font: {
+        family: $main-font;
+        size: 3rem;
+        weight: normal;
+    }
+    margin: {
+        bottom: 0;
+        top: -0.1rem;
+    }
+    text-align: center;
+
+}
+
 .gallery-img_caption {
     font-size: 1.5rem;
     height: 15%;
@@ -165,13 +180,16 @@
     aspect-ratio: auto 1638 / 2048;
     display: block;
     height: 100%;
-    margin-right: auto;
+    margin-left: auto;
+    object-fit: contain;
     width: auto;
 }
 
 .landscapeWeb {
     aspect-ratio: auto 2048 / 1280;
     height: 100%;
+    max-width: 80%;
+    object-fit: contain;
     width: auto;
 }
 
@@ -180,13 +198,16 @@
     height: 40%;
     margin: {
         bottom: auto;
-        top: 7%;
+        top: 10%;
     }
+    max-width: 80%;
+    object-fit: contain;
     width: auto;
 }
 
 .portraitWebTall {
     aspect-ratio: auto 1365 / 2048;
     height: 100%;
+    margin-left: auto;
     width: auto;
 }

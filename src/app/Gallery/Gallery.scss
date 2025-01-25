@@ -60,25 +60,7 @@
     height: auto;
     padding: {
         bottom: 2rem;
-        top: 1rem;
+        top: 2rem;
     }
     width: 100%;
-}
-
-.gallery-info {
-    text-align: center;
-    width: 100%;
-    &_header {
-        color: $tertiary-color;
-        font: {
-            family: $main-font;
-            size: 3rem;
-            weight: normal;
-        }
-        margin: {
-            bottom: 0;
-            top: -0.1rem;
-        }
-        text-align: left;
-    }
 }
