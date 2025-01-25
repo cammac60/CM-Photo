@@ -46,6 +46,21 @@
     width: 20%;
 }
 
+.gallery-img_menu-header {
+    color: $tertiary-color;
+    font: {
+        family: $main-font;
+        size: 3rem;
+        weight: normal;
+    }
+    margin: {
+        bottom: 0;
+        top: -0.1rem;
+    }
+    text-align: center;
+
+}
+
 .gallery-img_caption {
     font-size: 1.5rem;
     height: 15%;
