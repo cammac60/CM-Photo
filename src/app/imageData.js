@@ -504,10 +504,10 @@ export const rawImageData = [
                 isBanner: false
             },
             {
-                name: "La_segrada3_Blog.JPG",
-                id: "57ae8729-72c6-478e-2e39-c7e873254700",
+                name: "La_Sagrada4_Blog.JPG",
+                id: "d4576977-86d4-4e52-2a5b-5247c5814600",
                 caption: "Barcelona, Spain",
-                storeURL: "https://cameronmacraephoto.darkroom.com/products/landscape/1544489",
+                storeURL: "https://cameronmacraephoto.darkroom.com/products/landscape/1610744",
                 variantSize: "landscapeWeb",
                 order: 2,
                 isBanner: false
@@ -717,6 +717,24 @@ export const rawImageData = [
                 storeURL: "https://cameronmacraephoto.darkroom.com/products/landscape/1544466",
                 variantSize: "portraitWeb",
                 order: 25,
+                isBanner: false
+            },
+            {
+                name: "Lake_Isabelle_Blog.JPG",
+                id: "d74af457-6117-4cdf-cf16-d7e999d14300",
+                caption: "Lake Isabelle, Colorado, USA",
+                storeURL: "https://cameronmacraephoto.darkroom.com/products/landscape/1610742",
+                variantSize: "portraitWeb",
+                order: 26,
+                isBanner: false
+            },
+            {
+                name: "Ghent_Reflection_Blog.JPG",
+                id: "6174a57f-ec81-4ade-6d12-c62abf2dbe00",
+                caption: "Ghent, Belgium",
+                storeURL: "https://cameronmacraephoto.darkroom.com/products/landscape/1610743",
+                variantSize: "portraitWeb",
+                order: 27,
                 isBanner: false
             }
         ]
